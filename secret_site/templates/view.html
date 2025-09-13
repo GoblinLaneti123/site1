@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veriler</title>
+</head>
+<body>
+    <h2>Config.json Verileri</h2>
+    <table border="1">
+        <tr>
+            <th>Kullanıcı Adı</th>
+            <th>Şifre</th>
+        </tr>
+        {% for item in messages %}
+        <tr>
+            <td>{{ item.username }}</td>
+            <td>{{ item.password }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
